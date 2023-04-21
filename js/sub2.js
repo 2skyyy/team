@@ -7,6 +7,3 @@ for(let i=0; i<centerItem2n.length; i++){
     
 }
 
-const centerItem = document.querySelectorAll('.centerItem');
-const more = document.querySelectorAll('.more');
-
