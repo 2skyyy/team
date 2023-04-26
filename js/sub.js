@@ -1,7 +1,8 @@
 $(document).on('ready', function () {
     $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
+        infinite: true,
+        autoplay: true
     })
 
     ;$(".center").slick({
@@ -9,6 +10,7 @@ $(document).on('ready', function () {
         centerMode: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true,
         responsive: [ // 반응형 웹 구현 옵션
         {  
             breakpoint: 1800,
@@ -17,13 +19,13 @@ $(document).on('ready', function () {
             } 
         },
         { 
-            breakpoint: 1300,
+            breakpoint: 1200,
             settings: {	
-                slidesToShow:2 
+                slidesToShow:2
             } 
         },
         { 
-            breakpoint: 930,
+            breakpoint: 1000,
             settings: {	
                 slidesToShow:1
             } 
@@ -31,10 +33,36 @@ $(document).on('ready', function () {
     ]
     });
 
-    $(".regular").slick({
+    // $(".regular").slick({
+    //     infinite: true,
+    //     slidesToShow: 6,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    // });
+
+    $(".v4slider").slick({
         infinite: true,
-        slidesToShow: 6.28,
-        slidesToScroll: 1
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [ // 반응형 웹 구현 옵션
+        {  
+            breakpoint: 1500,
+            settings: {
+                slidesToShow:3
+            } 
+        },
+        { 
+            breakpoint: 900,
+            settings: {	
+                slidesToShow:1
+            } 
+        }
+    ]
     });
+
+
+
 });
 

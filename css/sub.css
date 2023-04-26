@@ -111,7 +111,7 @@ main{
 
 .aBtn{
     display: block;
-    width: 280px;
+    width: 300px;
     height: 60px;
     line-height: 60px;
     margin: 0 auto 50px;
@@ -272,7 +272,7 @@ main{
 }
 
 .visual3 .aBtn{
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     margin-bottom: 0;
 }
 
@@ -281,6 +281,7 @@ main{
     padding: 50px 0;
     margin-bottom: 50px;
     width: 100%;
+    height: 1000px;
     background: #f6f6f6;
     overflow: hidden;
 }
@@ -302,15 +303,44 @@ main{
     z-index: 999;
 }
 
-.regular{
-    margin-bottom: 300px;
+.v4slider{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.regularItem{
-    width: 260px;
+.v4sliderItem{
+    display: block;
+    /* width: 260px; */
+    padding: 0 20px;
     overflow: hidden;
+    text-align: center;
 }
 
+.v4sliderItem img{
+    /* width:100%; */
+    margin: 0 auto 20px;
+}
+
+.v4sliderItem h4{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.v4sliderItem p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.v4sliderItem span{}
+
+.visual4 .aBtn{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
 
 /* .slick-slide.slick-active{
     position: absolute;
@@ -320,7 +350,7 @@ main{
     padding: 0;
 } */
 
-.regular h4{
+/* .regular h4{
     padding: 20px 0 15px;
     font-size: 18px;
     font-weight: bold;
@@ -332,7 +362,7 @@ main{
     margin-bottom: 10px;
     font-size: 20px;
     color: #292929;
-}
+} */
 
 .regular span{}
 
@@ -409,6 +439,11 @@ main{
     background: #f6f6f6;
 }
 
+.visual6 h2{
+    margin-bottom: 50px;
+}
+
+
 .v6mainImg{
     position: relative;
     width: 100%;
@@ -433,9 +468,9 @@ main{
 .v6mainImg p{
     position: absolute;
     top: 50%;
-    left: 100px;
-    transform: translateY(-50%);
-    font-size: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
     font-weight: bold;
     color: #fff;
 }
@@ -465,7 +500,7 @@ main{
     padding: 80px 0 30px;
     margin: 0 auto 50px;
     width: 1140px;
-    height: 430px;
+    height: 500px;
 }
 
 .v6introList{
@@ -569,29 +604,459 @@ article ul > li{
     color: #aaa;
 }
 
+/* @media screen and (max-width: 1500px) {
+    .v4slider{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .v4sliderItem{
+        display: block;
+        padding: 0 20px;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .v4sliderItem img{
+        margin: 0 auto 20px;
+    }
+    
+    .v4sliderItem h4{
+        font-size: 23px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .v4sliderItem p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .v4sliderItem span{}
+    
+    .visual4 .aBtn{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+    }
+} */
 
-@media screen and (max-width:1300px) {}
-
-@media screen and (max-width:1100px) {}
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1350px) {
     .centerItem{
-        border: 1px solid red;
+        width: 350px;
+        height: 450px;
+    }
+    
+    .centerItem a{
+        width: 350px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    .visual2 h2,
+    .foodieMenu h2,
+    .visual3 h2,
+    .visual4 h2,
+    .visual5 h2,
+    .visual6 h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .visual2{
+        padding-top: 80px;
+    }
+
+    .foodieMenuList{
+        width: 1000px;
+        height: 600px;
+    }
+
+    .foodieMenuItem > a{
+        width: 150px;
+        height: 150px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 17px;
+    }
+
+    .visual4{
+        width: 100%;
+        height: 850px;
+    }
+
+    .phone{
+        top: 150px;
+        width: 280px;
+        height: 550px;
+        border: 8px solid #333;
+    }
+
+    .v4slider{
+        position: absolute;
+        top: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .v4sliderItem{
+        padding: 0 15px;
+    }
+    
+    .v4sliderItem img{
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 20px;
+    }
+    
+    .v4sliderItem h4{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    
+    .v4sliderItem p{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .v4sliderItem span{
+        font-size: 14px;
+    }
+    
+    .visual4 .aBtn{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .center{
+        width: 100%;
+        height: 450px;
+    }
+    
+    .centerItem{
+        width: 420px;
+        height: 450px;
+    }
+    
+    .centerItem a{
+        width: 420px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 300px;
     }
     
     .mt80{
         margin-top: 0;
     }
+
+    .aBtn{
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto 40px;
+        font-size: 16px;
+        border-radius: 40px;
+    }
 }
 
-@media screen and (max-width:830px) {}
 
-@media screen and (max-width:750px) {}
+@media screen and (max-width:1100px) {
+}
+
+@media screen and (max-width:1000px) {
+    .visual2{
+        padding-top: 50px;
+    }
+
+    .center{
+        width: 100%;
+        height: 550px;
+    }
+
+    .centerItem{
+        width: 600px;
+        height: 550px;
+    }
+    
+    .centerItem a{
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 400px;
+    }
+} 
+
+@media screen and (max-width:830px) {
+    .visual2 h2,
+    .foodieMenu h2,
+    .visual3 h2,
+    .visual4 h2,
+    .visual5 h2,
+    .visual6 h2{
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .foodieMenuList{
+        width: 650px;
+        height: 400px;
+    }
+
+    .foodieMenuItem > a{
+        width: 110px;
+        height: 110px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .center{
+        width: 100%;
+        height: 450px;
+    }
+
+    .centerItem{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .centerItem a{
+        width: 400px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 30px;
+    }
+    
+    .foodieMenuList{
+        width: 500px;
+        height: 600px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .foodieMenuItem{
+        flex: 150px;
+    }
+    
+    .foodieMenuItem > a img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .foodieMenuItem > a span{
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width:650px) {}
 
 @media screen and (max-width:550px) {}
 
-@media screen and (max-width:500px) {}
+@media screen and (max-width:500px) {
+    .center{
+        width: 100%;
+        height: 350px;
+    }
 
-@media screen and (max-width:450px) {}
+    .centerItem{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .centerItem a{
+        width: 350px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .centerItem h3{
+        font-size: 17px;
+    }
+    
+    .date{
+        font-size: 12px;
+    }
+
+    .aBtn{
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        border-radius: 40px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 20px;
+    }
+    
+    .foodieMenuList{
+        width: 400px;
+        height: 500px;
+    }
+    
+    .foodieMenuItem{
+        flex: 100px;
+    }
+    
+    .foodieMenuItem > a img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .foodieMenuItem > a span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .center{
+        width: 100%;
+        height: 300px;
+    }
+
+    .centerItem{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .centerItem a{
+        width: 300px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .centerItem h3{
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+    
+    .date{
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .center{
+        width: 100%;
+        height: 250px;
+    }
+
+    .centerItem{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .centerItem a{
+        width: 250px;
+        height: 100%;
+    }
+    
+    .centerItem img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .foodieMenu h2{
+        margin-bottom: 20px;
+    }
+    
+    .foodieMenuList{
+        width: 320px;
+        height: 450px;
+    }
+    
+    .foodieMenuItem{
+        flex: 90px;
+    }
+
+    .foodieMenuItem > a{
+        width: 90px;
+        height: 90px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .foodieMenu h2{
+        margin-bottom: 15px;
+    }
+    
+    .foodieMenuList{
+        width: 290px;
+        height: 400px;
+    }
+    
+    .foodieMenuItem{
+        flex: 80px;
+    }
+
+    .foodieMenuItem > a{
+        width: 80px;
+        height: 80px;
+    }
+
+    .foodieMenuItem > a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .foodieMenuItem > a span{
+        font-size: 11px;
+    }
+}

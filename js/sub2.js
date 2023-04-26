@@ -6,5 +6,3 @@ for(let i=0; i<centerItem2n.length; i++){
     }
     
 }
-
-
