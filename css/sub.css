@@ -2,12 +2,11 @@ main{
     width: 100%;
 }
 
-.visual2 h2,
 .foodieMenu h2,
-.visual3 h2,
-.visual4 h2,
-.visual5 h2,
-.visual6 h2{ /* 모든 visual h2 공통요소 */
+.eventCoupon h2,
+.bestItem h2,
+.ad h2,
+.mealKitPage h2{
     line-height: 1.2em;
     text-align: center;
     font-size: 60px;
@@ -15,46 +14,63 @@ main{
     color: #292929;
 }
 
-
-/* .visual1{
-    width: 100%;
-    height: 750px;
-    margin-bottom: 150px;
-    overflow: hidden;
+.foodieMenu{
+    padding: 50px 0 80px;
 }
 
-.lazyItem{
-    position: relative;
-    width: 100%;
-    height: 750px;
+.foodieMenu h2{
+    margin-bottom: 50px;
 }
 
-.lazyItem img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.foodieMenuList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
 }
 
-.lazyItem p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
+.foodieMenuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+}
+
+.foodieMenuItem > a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px 5px rgba(170, 170, 170, .1);
+}
+
+.foodieMenuItem > a img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 7px;
+}
+
+.foodieMenuItem > a span{
+    display: block;
+    font-size: 23px;
     font-weight: bold;
-    color: #fff;
-} */
+}
 
-.visual2{
+.eventCoupon{
     padding-top: 100px;
     width: 100%;
+    background: #f6f6f6;
     overflow: hidden;
 }
 
-.visual2 h2{
+.eventCoupon h2{
     margin-bottom: 80px;
 }
-
 
 .center{
     width: 100%;
@@ -131,162 +147,16 @@ main{
 }
 
 
-.foodieMenu{
-    padding: 50px 0 80px;
-}
-
-.foodieMenu h2{
-    margin-bottom: 50px;
-}
-
-.foodieMenuList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1300px;
-    height: 700px;
-    margin: 0 auto;
-}
-
-.foodieMenuItem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 25%;
-}
-
-.foodieMenuItem > a{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 2px 5px rgba(170, 170, 170, .1);
-}
-
-.foodieMenuItem > a img{
-    width: 90px;
-    height: 90px;
-    margin-bottom: 7px;
-}
-
-.foodieMenuItem > a span{
-    display: block;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-.visual3 h2{
-    position: relative;
-    transform: translateY(40px);
-    margin-bottom: 0;
-    z-index: 99;
-}
-
-.v3ImgBox,
-.v5ImgBox,
-.v6ImgBox{  /* 공통 */
-    width: 100%;
-    height: 890px;
-}
-
-.v3mainImg,
-.v5mainImg{
-    position: relative;
-    width: 1600px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.v3mainImg img,
-.v5mainImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.v3yellowBox{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 30px;
-    left: -50px;
-    background: rgba(244, 151, 0, .8);
-}
-
-.v3redBox{
-    position: absolute;
-    width: 150px;
-    height: 80px;
-    top: 550px;
-    right: -75px;
-    background: rgba(237, 64, 67, .8);
-}
-
-.v3intro,
-.v5intro{   /*공통*/
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 50px 30px;
-    margin: 0 auto;
-    width: 1300px;
-    height: 350px;
-}
-
-.v3intro{
-    transform: translateY(-120px);
-    background: rgba(255, 255, 255, 0.4);
-}
-
-
-.v3introList,
-.v5introList{
-    width: 370px;
-    text-align: center;
-}
-
-.v3introList > div::before,
-.v5introList p::before{ /* 공통 */
-    display: block;
-    content: "";
-    clear: both;
-    width: 100%;
-    height: 2px;
-    background: #BF132B;
-    border-radius: 2px;
-}
-
-
-.v3introList h3{
-    padding: 30px 0;
-    font-size: 23px;
-    font-weight: bold;
-    color: #292929;
-}
-
-.v3introList p{
-    font-size: 20px;
-    line-height: 1.3em;
-}
-
-.visual3 .aBtn{
-    transform: translateY(-100px);
-    margin-bottom: 0;
-}
-
-.visual4{
+.bestItem{
     position: relative;
     padding: 50px 0;
     margin-bottom: 50px;
     width: 100%;
     height: 1000px;
-    background: #f6f6f6;
     overflow: hidden;
 }
 
-.visual4 h2{
+.bestItem h2{
     margin-bottom: 200px;
 }
 
@@ -301,111 +171,149 @@ main{
     border-radius: 50px;
     box-shadow: 10px 20px 15px #999;
     z-index: 999;
+    pointer-events: none;
 }
 
-.v4slider{
-    max-width: 1600px;
+.bestSlider{
     width: 100%;
-    margin: 0 auto;
 }
 
-.v4sliderItem{
+.bestSliderItem{
     display: block;
-    /* width: 260px; */
     padding: 0 20px;
     overflow: hidden;
     text-align: center;
 }
 
-.v4sliderItem img{
-    /* width:100%; */
-    margin: 0 auto 20px;
+.bestSliderItem img{
+    margin: 0 auto 30px;
 }
 
-.v4sliderItem h4{
-    font-size: 23px;
+.bestSliderItem h4{
+    font-size: 25px;
     font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.bestSliderItem p{
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
-.v4sliderItem p{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.v4sliderItem span{}
-
-.visual4 .aBtn{
+.bestItem .aBtn{
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50%);
 }
 
-/* .slick-slide.slick-active{
-    position: absolute;
-    left: 200px;
-    width: 260px;
-    margin: 0;
-    padding: 0;
-} */
-
-/* .regular h4{
-    padding: 20px 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: underline;
-    color: #292929;
+.mealKitPage{
+    padding: 50px 0 30px;
+    background: #f6f6f6;
 }
 
-.regular p{
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #292929;
-} */
-
-.regular span{}
-
-.visual5{}
-
-.visual5 h2{
-    position: relative;
-    transform: translateY(40px);
-    margin-bottom: 0;
-    z-index: 99;
-}
-
-.v5ImgBox{
+.mealKitPage h2{
     margin-bottom: 50px;
 }
 
-.v5yellowBox{
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    top: 50px;
-    left: -60px;
-    background: rgba(244, 151, 0, .8);
+.mealKitIntro{  
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+    margin: 0 auto 50px;
+    width: 1140px;
+    height: 500px;
 }
 
-.v5redBox{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 700px;
-    right: -80px;
-    background: rgba(237, 64, 67, .8);
+.mealKitIntroList{
+    flex: 1;
+    text-align: center;
 }
 
-.v5intro{
+.mealKitImg{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mealKitImg img{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.mealKitIntroList h3::before{ 
+    display: block;
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 2px;
+    background: #BF132B;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.mealKitIntroList h3{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.mealKitIntroList p{
+    font-size: 17px;
+    line-height: 1.3em;
+}
+
+.ad{
+    background: #f6f6f6;
+    padding-bottom: 50px;
+}
+
+.ad h2{
+    margin-bottom: 50px;
+}
+
+.adImgBox{
+    width: 100%;
+    height: 890px;
+    margin-bottom: 30px;
+}
+
+.adMainImg{
+    position: relative;
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.adMainImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.adIntro{
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+    width: 1140px;
+    height: auto;
     top:50%;
     left: 50%;
+    margin: 0 auto;
     transform: translate(-50%, -50%);
 }
 
+.adIntroList{
+    width: 370px;
+    text-align: center;
+}
 
-.v5introList h3{
+.adIntroList h3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,129 +328,27 @@ main{
     background: rgba(41, 41, 41, .8);
 }
 
-.v5introList p{
+.adIntroList p{
     color: #fff;
     font-size: 20px;
     line-height: 1.7em;
 }
 
-.v5introList p::before{
+.adIntroList p::before{
     margin-bottom: 30px;
 }
 
-.visual5 .aBtn{
-    margin-bottom: 100px;
+.adHide{
+    display: none;
+    width: 400px;
+    font-size: 11px;
+    line-height: 1.1rem;
+    margin: 0 auto 30px;
 }
 
-.visual6{
-    padding: 50px 0 30px;
-    background: #f6f6f6;
-}
-
-.visual6 h2{
-    margin-bottom: 50px;
-}
-
-
-.v6mainImg{
-    position: relative;
-    width: 100%;
-    height: 720px;
-}
-
-.v6mainImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.v6bg{
-    position: absolute;
-    top:0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 1600px;
-    height: 100%;
-}
-
-.v6mainImg p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.v6yellowBox{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 20px;
-    left: 3%;
-    background: rgba(244, 151, 0, .8);
-}
-
-.v6redBox{
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    top: -40px;
-    left: 5%;
-    background: rgba(237, 64, 67, .8);
-}
-
-
-.v6intro{  
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0 30px;
-    margin: 0 auto 50px;
-    width: 1140px;
-    height: 500px;
-}
-
-.v6introList{
-    flex: 1;
-    text-align: center;
-}
-
-.v6introList > div > div{
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.v6introList > div > div img{
-    width: 100%;
-    height: 100%;
-    background: #fff;
-}
-
-.v6introList h3::before{ 
-    display: block;
-    content: "";
-    clear: both;
-    width: 100%;
-    height: 2px;
-    background: #BF132B;
-    border-radius: 2px;
-    margin-bottom: 15px;
-}
-
-.v6introList h3{
-    padding: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #292929;
-}
-
-.v6introList p{
-    font-size: 20px;
-    line-height: 1.3em;
+.adHide mark{
+    font-size: 13px;
+    line-height: 1.2rem;
 }
 
 article{
@@ -604,43 +410,26 @@ article ul > li{
     color: #aaa;
 }
 
-/* @media screen and (max-width: 1500px) {
-    .v4slider{
-        width: 100%;
-        margin: 0 auto;
+@media screen and (max-width: 1650px) {
+    .adImgBox{
+        height: 790px;
     }
-    
-    .v4sliderItem{
-        display: block;
-        padding: 0 20px;
-        overflow: hidden;
-        text-align: center;
+
+    .adMainImg{
+        width: 1400px;
     }
-    
-    .v4sliderItem img{
-        margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    .adImgBox{
+        height: 730px;
     }
-    
-    .v4sliderItem h4{
-        font-size: 23px;
-        font-weight: bold;
-        margin-bottom: 10px;
+
+    .adMainImg{
+        width: 1300px;
     }
-    
-    .v4sliderItem p{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .v4sliderItem span{}
-    
-    .visual4 .aBtn{
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%);
-    }
-} */
+}
+
 
 @media screen and (max-width:1350px) {
     .centerItem{
@@ -657,21 +446,54 @@ article ul > li{
         width: 100%;
         height: 250px;
     }
+
+    .adImgBox{
+        height: 645px;
+    }
+
+    .adMainImg{
+        width: 1150px;
+    }
+
+    .adIntro{
+        width: 1000px;
+    }
+    
+    .adIntroList{
+        width: 300px;
+    }
+    
+    .adIntroList h3{
+        width: 180px;
+        height: 180px;
+        line-height: 1.6rem;
+        margin: 0 auto 20px;
+        font-size: 20px;
+    }
+    
+    .adIntroList p{
+        font-size: 17px;
+        line-height: 1.6em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media screen and (max-width:1300px) {
 
-    .visual2 h2,
+    .eventCoupon h2,
     .foodieMenu h2,
-    .visual3 h2,
-    .visual4 h2,
-    .visual5 h2,
-    .visual6 h2{
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
         font-size: 40px;
         margin-bottom: 50px;
     }
 
-    .visual2{
+    .eventCoupon{
         padding-top: 80px;
     }
 
@@ -695,7 +517,7 @@ article ul > li{
         font-size: 17px;
     }
 
-    .visual4{
+    .bestItem{
         width: 100%;
         height: 850px;
     }
@@ -707,43 +529,80 @@ article ul > li{
         border: 8px solid #333;
     }
 
-    .v4slider{
+    .bestSlider{
         position: absolute;
         top: 250px;
         width: 100%;
         margin: 0 auto;
     }
 
-    .v4sliderItem{
+    .bestSliderItem{
         padding: 0 15px;
     }
     
-    .v4sliderItem img{
+    .bestSliderItem img{
         width: 220px;
         height: 220px;
         margin: 0 auto 20px;
     }
     
-    .v4sliderItem h4{
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
-    
-    .v4sliderItem p{
+    .bestSliderItem h4{
         font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .bestSliderItem p{
+        font-size: 15px;
         margin-bottom: 8px;
     }
     
-    .v4sliderItem span{
+    .bestSliderItem span{
         font-size: 14px;
     }
     
-    .visual4 .aBtn{
+    .bestItem .aBtn{
         position: absolute;
         left: 50%;
         bottom: 0;
         transform: translate(-50%);
+    }
+
+    .mealKitPage h2{
+        margin-bottom: 0;
+    }
+
+    .mealKitIntro{  
+        padding: 60px 0 30px;
+        margin: 0 auto 30px;
+        width: 900px;
+        height: 400px;
+    }
+    
+    .mealKitImg{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 12px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 25px;
+        font-size: 20px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 16px;
+        line-height: 1.3em;
     }
 }
 
@@ -780,6 +639,39 @@ article ul > li{
         font-size: 16px;
         border-radius: 40px;
     }
+
+    .adImgBox{
+        height: 535px;
+    }
+
+    .adMainImg{
+        width: 950px;
+    }
+
+    .adIntro{
+        width: 700px;
+    }
+    
+    .adIntroList{
+        width: 200px;
+    }
+    
+    .adIntroList h3{
+        width: 160px;
+        height: 160px;
+        line-height: 1.6rem;
+        margin: 0 auto 20px;
+        font-size: 18px;
+    }
+    
+    .adIntroList p{
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 17px;
+    }
 }
 
 
@@ -787,7 +679,7 @@ article ul > li{
 }
 
 @media screen and (max-width:1000px) {
-    .visual2{
+    .eventCoupon{
         padding-top: 50px;
     }
 
@@ -812,15 +704,54 @@ article ul > li{
         width: 100%;
         height: 400px;
     }
+
+    .mealKitIntro{  
+        padding: 50px 0 20px;
+        margin: 0 auto 30px;
+        width: 800px;
+        height: 300px;
+    }
+    
+    .mealKitImg{
+        width: 110px;
+        height: 110px;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 450px;
+    }
+
+    .adMainImg{
+        width: 800px;
+    }
 } 
 
 @media screen and (max-width:830px) {
-    .visual2 h2,
+    .eventCoupon h2,
     .foodieMenu h2,
-    .visual3 h2,
-    .visual4 h2,
-    .visual5 h2,
-    .visual6 h2{
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
         font-size: 35px;
         margin-bottom: 40px;
     }
@@ -843,6 +774,99 @@ article ul > li{
 
     .foodieMenuItem > a span{
         font-size: 13px;
+    }
+
+    .mealKitPage{
+        padding: 30px 0 20px;
+        background: #f6f6f6;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 30px;
+    }
+    
+    .mealKitIntro{  
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+        width: 600px;
+        height: 500px;
+    }
+    
+    .mealKitIntroList{
+        flex: 250px;
+    }
+    
+    .mealKitImg{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .mealKitImg img{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        display: block;
+        content: "";
+        clear: both;
+        width: 100%;
+        height: 2px;
+        background: #BF132B;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #292929;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 340px;
+    }
+
+    .adMainImg{
+        width: 600px;
+    }
+
+    .adIntro{
+        width: 450px;
+    }
+    
+    .adIntroList{
+        width: 130px;
+    }
+    
+    .adIntroList h3{
+        width: 120px;
+        height: 120px;
+        line-height: 1.4rem;
+        margin: 0 auto 20px;
+        font-size: 15px;
+    }
+    
+    .adIntroList p{
+        font-size: 11px;
+        line-height: 1.4em;
+    }
+    
+    .adIntroList p::before{
+        margin-bottom: 15px;
     }
 }
 
@@ -892,7 +916,85 @@ article ul > li{
     }
 }
 
-@media screen and (max-width:650px) {}
+@media screen and (max-width:650px) {
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .mealKitPage{
+        padding: 30px 0 20px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 25px;
+    }
+    
+    .mealKitIntro{  
+        width: 500px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 200px;
+    }
+    
+    .mealKitImg{
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+    }
+    
+    .mealKitIntroList h3::before{ 
+        margin-bottom: 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 13px;
+        line-height: 1.3em;
+    }
+
+    .adImgBox{
+        height: 225px;
+    }
+
+    .adMainImg{
+        width: 400px;
+    }
+
+    .adIntro{
+        width: 300px;
+    }
+    
+    .adIntroList{
+        width: 90px;
+    }
+    
+    .adIntroList h3{
+        width: 70px;
+        height: 70px;
+        line-height: 1.2rem;
+        margin: 0 auto 15px;
+        font-size: 13px;
+    }
+    
+    .adIntroList p{
+        display: none;
+    }
+
+    .adHide{
+        display: block;
+    }
+}
 
 @media screen and (max-width:550px) {}
 
@@ -954,9 +1056,50 @@ article ul > li{
     .foodieMenuItem > a span{
         font-size: 14px;
     }
+
+    .mealKitPage{
+        padding: 20px 0 10px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 20px;
+    }
+    
+    .mealKitIntro{  
+        width: 400px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 180px;
+    }
+    
+    .mealKitImg{
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    
+    .mealKitIntroList p{
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:450px) {
+    .eventCoupon h2,
+    .foodieMenu h2,
+    .bestItem h2,
+    .ad h2,
+    .mealKitPage h2{
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    
     .center{
         width: 100%;
         height: 300px;
@@ -985,6 +1128,21 @@ article ul > li{
     .date{
         padding: 7px 10px;
         font-size: 11px;
+    }
+
+    .adImgBox{
+        height: 170px;
+    }
+
+    .adMainImg{
+        width: 300px;
+    }
+
+    .adHide{
+        display: block;
+        width: 300px;
+        font-size: 10px;
+        margin: 0 auto 30px;
     }
 }
 
@@ -1028,6 +1186,38 @@ article ul > li{
     }
 
     .foodieMenuItem > a span{
+        font-size: 12px;
+    }
+
+    .mealKitPage{
+        padding: 20px 0 10px;
+    }
+    
+    .mealKitPage h2{
+        margin-bottom: 15px;
+    }
+    
+    .mealKitIntro{  
+        width: 300px;
+        height: 400px;
+    }
+    
+    .mealKitIntroList{
+        flex: 150px;
+    }
+    
+    .mealKitImg{
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+    
+    .mealKitIntroList h3{
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .mealKitIntroList p{
         font-size: 12px;
     }
 }
