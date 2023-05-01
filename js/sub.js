@@ -11,7 +11,7 @@ $(document).on('ready', function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        responsive: [ // 반응형 웹 구현 옵션
+        responsive: [
         {  
             breakpoint: 1800,
             settings: {
@@ -33,20 +33,13 @@ $(document).on('ready', function () {
     ]
     });
 
-    // $(".regular").slick({
-    //     infinite: true,
-    //     slidesToShow: 6,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    // });
-
-    $(".v4slider").slick({
+    $(".bestSlider").slick({
         infinite: true,
         centerMode: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        responsive: [ // 반응형 웹 구현 옵션
+        responsive: [
         {  
             breakpoint: 1500,
             settings: {
