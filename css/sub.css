@@ -45,8 +45,13 @@ main{
     align-items: center;
     width: 200px;
     height: 200px;
+    transition: .3s;
     border-radius: 50%;
     box-shadow: 3px 3px 2px 5px rgba(170, 170, 170, .1);
+}
+
+.foodieMenuItem a:hover{
+    background-color: #efefef;
 }
 
 .foodieMenuItem > a img{
@@ -351,65 +356,6 @@ main{
     line-height: 1.2rem;
 }
 
-article{
-    width: 100%;
-    height: 300px;
-    background: #555555;
-}
-
-article ul{
-    display: flex;
-    width: 1200px;
-    height: 100%;
-    margin: auto;
-}
-
-article ul > li{
-    flex: 1;
-}
-
-.sideBorder{
-    border-left: 1px solid rgba(170, 170, 170, .3);
-    border-right: 1px solid rgba(170, 170, 170, .3);
-}
-
-.atItem{
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    text-align: center;
-}
-
-.atIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 50%;
-    background-color: #494949;
-}
-
-.atIcon img{
-    width: 40px;
-    height: 40px;
-}
-
-.atItem h5{
-    padding: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.atItem p{
-    font-size: 16px;
-    line-height: 1.5rem;
-    color: #aaa;
-}
-
 @media screen and (max-width: 1650px) {
     .adImgBox{
         height: 790px;
@@ -498,7 +444,7 @@ article ul > li{
     }
 
     .foodieMenuList{
-        width: 1000px;
+        width: 100%;
         height: 600px;
     }
 
